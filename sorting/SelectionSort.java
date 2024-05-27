@@ -49,12 +49,15 @@ public class SelectionSort {
 		int max = dataList[0];
 		int maxIndex = 0;
 		
+		//for문을 1부터 last까지 탐색
 		for(int i = 1; i <= last; i++) {
+			//dataList[i]값이 max값보다 크다면 max에 dataList[i]값 저장, maxIndex에 i 저장
 			if(dataList[i] > max) {
 				max = dataList[i];
 				maxIndex = i;
 			}
 		}
+		//반복문이 완료된 후 maxIndex return
 		return maxIndex;
 	}
 }
