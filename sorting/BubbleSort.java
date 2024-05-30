@@ -15,10 +15,10 @@ public class BubbleSort {
 		//정렬된 가장 큰 수는 오른쪽에 배치
 		//last값을 length-1에서 1까지 줄여나가면서 정렬
 		//last값이 1까지 왔을때 마지막으로 0값과 비교후 정렬 완료
-		for(int last = dataList.length; last >= 1; last--) {
+		for(int last = dataList.length-1; last >= 1; last--) {
 			//i는 0부터 last까지 이동 여기서 index가 i, i+1인 연속된 위치에 있는 배열의 값을 비교후 
 			//i에 있는값이 작으면 유지 아니라면 swap을통해 큰값을 오른쪽으로 계속 정렬해서 밀어냄
-			for(int i = 0; i <= last; i++) {
+			for(int i = 0; i <= last-1; i++) {
 				if(dataList[i] > dataList[i+1]) {
 					swap(dataList, i, i+1);
 				}
